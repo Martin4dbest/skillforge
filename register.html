@@ -56,7 +56,6 @@
     </div>
     <!-- Topbar End -->
 
-
     <!-- Navbar Start -->
     <div class="container-fluid">
         <div class="row border-top px-xl-5">
@@ -142,7 +141,6 @@
     </div>
     <!-- Navbar End -->
 
-
     <!-- Registration Form Start -->
     <div class="container py-5">
         <div class="row justify-content-center">
@@ -163,54 +161,30 @@
                         <input type="tel" class="form-control" id="phone" name="phone" required>
                     </div>
                     <div class="form-group">
-                        <label for="country">Country/State</label>
-                        <input type="text" class="form-control" id="country" name="country" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="course">Select Course</label>
+                        <label for="course">Preferred Course</label>
                         <select class="form-control" id="course" name="course" required>
-                            <option value="python_programming">Python Programming</option>
-                            <option value="data_analysis">Data Analysis</option>
-                            <option value="cyber_security">Cybersecurity Analyst</option>
+                            <option value="">Select a Course</option>
+                            <option value="Python Programming">Python Programming</option>
+                            <option value="Data Analysis">Data Analysis</option>
+                            <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                            <option value="Web Development with Node.js and React">Web Development with Node.js and React</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="installments">Installment Options</label>
-                        <textarea class="form-control" id="installments" name="installments" rows="3" readonly>
-                            1. Initial Payment (At Startup)
-                            2. Second Payment (Two Weeks into the Training)
-                        </textarea>
+                        <label>Available Days</label><br>
+                        <label><input type="checkbox" name="days" value="Monday"> Monday</label>
+                        <label><input type="checkbox" name="days" value="Tuesday"> Tuesday</label>
+                        <label><input type="checkbox" name="days" value="Wednesday"> Wednesday</label>
+                        <label><input type="checkbox" name="days" value="Thursday"> Thursday</label>
+                        <label><input type="checkbox" name="days" value="Friday"> Friday</label>
                     </div>
                     <div class="form-group">
-                        <label for="program_overview">Program Overview</label>
-                        <textarea class="form-control" id="program_overview" name="program_overview" rows="6" readonly>
-                            Our eLearning programs are designed to offer comprehensive training across various fields. The program overview includes the following key components:
-                        
-                            1. **Course Structure**: An outline of the course modules, including core topics and subtopics.
-                            2. **Module Details**: In-depth descriptions of each module, covering learning objectives, key concepts, and practical applications.
-                            3. **Key Takeaways**: Summaries of the skills and knowledge you will gain upon completing the course, including real-world applications and potential career benefits.
-                            4. **Training Resources**: Information on supplementary materials, such as reading lists, tools, and software that will enhance your learning experience.
-                            5. **Assessment and Certification**: Details on how assessments will be conducted and the criteria for certification upon course completion.
-                        
-                            **New Course Addition: Web Development with Node.js and React**
-                            - **Course Overview**: This course focuses on modern web development practices using Node.js for backend development and React for frontend development. 
-                            - **Key Topics**:
-                                - **Node.js Fundamentals**: Understanding server-side JavaScript, working with Express.js, and integrating with databases.
-                                - **React Basics**: Building dynamic user interfaces, managing state with React Hooks, and creating reusable components.
-                                - **Full-Stack Development**: Combining Node.js and React to develop complete, full-stack applications.
-                                - **Project Work**: Hands-on projects to apply your knowledge and build real-world applications.
-                            - **Key Takeaways**: Gain practical skills in full-stack web development, build interactive web applications, and enhance your job prospects in the tech industry.
-                        
-                            Our goal is to provide you with a thorough understanding and practical skills that will empower you in your chosen field.
-                        </textarea>
-                        
-                        
+                        <label>Preferred Time Slot</label><br>
+                        <label><input type="radio" name="time_slot" value="4-6 PM"> 4-6 PM</label>
+                        <label><input type="radio" name="time_slot" value="6-8 PM"> 6-8 PM</label>
+                        <label><input type="radio" name="time_slot" value="8-10 PM"> 8-10 PM</label>
                     </div>
-                    <div class="form-group">
-                        <label for="comments">Additional Comments</label>
-                        <textarea class="form-control" id="comments" name="comments" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
@@ -221,35 +195,67 @@
     <div class="container-fluid bg-dark text-light py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-center text-lg-left">
-                    <p class="m-0">&copy; <a href="#" class="text-light font-weight-bold">SkillForge eLearning</a>. All Rights Reserved.</p>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Contact Us</h5>
+                    <p class="mb-2">Email: skillforge82@gmail.com</p>
+                    <p class="mb-2">Phone: +2349045531092</p>
                 </div>
-                <div class="col-lg-6 text-center text-lg-right">
-                    <a href="#" class="text-light mx-2">Privacy Policy</a>
-                    <a href="#" class="text-light mx-2">Terms of Use</a>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a href="index.html" class="text-light">Home</a><br>
+                    <a href="about.html" class="text-light">About</a><br>
+                    <a href="contact.html" class="text-light">Contact</a><br>
+                    <a href="courses.html" class="text-light">Explore our Courses</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p class="mb-4">Subscribe to our newsletter to get the latest updates on courses and promotions.</p>
+                    <form action="https://formspree.io/f/xblrbyen" method="POST">
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
 
-    
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-chevron-up"></i></a>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = document.querySelectorAll('input[name="days"]');
+            const maxDays = 3;
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const checkedCount = document.querySelectorAll('input[name="days"]:checked').length;
+                    if (checkedCount > maxDays) {
+                        alert(`You can select up to ${maxDays} days only.`);
+                        this.checked = false;
+                    }
+                });
+            });
+
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(event) {
+                const timeSlotSelected = document.querySelector('input[name="time_slot"]:checked');
+                if (!timeSlotSelected) {
+                    alert('Please select a time slot.');
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
